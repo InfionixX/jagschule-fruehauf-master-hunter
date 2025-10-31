@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagdschule Frühauf - Hunting Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar Component -->
+    <custom-navbar></custom-navbar>
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-screen animate-element" style="background-image: url('http://static.photos/nature/1200x630/42');">
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Master the Art of Hunting</h1>
+            <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl">Learn from the best hunters in Europe at Jagdschule Frühauf</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="#courses" class="bg-[#40534C] hover:bg-[#1A3636] text-white font-bold py-3 px-6 rounded-lg transition duration-300">Our Courses</a>
+                                <a href="#story" class="bg-[#D6BD98] hover:bg-[#c9af7f] text-[#1A3636] font-bold py-3 px-6 rounded-lg transition duration-300">Student Stories</a>
+</div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">About Jagdschule Frühauf</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-600 mb-6">Founded in 1995, Jagdschule Frühauf has been the premier institution for hunting education in Central Europe. Our mission is to preserve hunting traditions while incorporating modern, ethical practices.</p>
+                    <p class="text-lg text-gray-600 mb-6">With over 5,000 graduates, we take pride in our comprehensive curriculum that covers everything from marksmanship to wildlife conservation.</p>
+                    <div class="flex items-center gap-4">
+                        <i data-feather="award" class="text-amber-700"></i>
+                        <span class="font-semibold">Certified by European Hunting Association</span>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-2xl">
+                    <img src="http://static.photos/outdoor/1024x576/10" alt="Hunting school campus" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Teachers Section -->
+    <section id="teachers" class="py-20 bg-gray-100 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Meet Our Master Instructors</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Teacher 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="http://static.photos/people/640x360/1" alt="Dieter Frühauf" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Dieter Frühauf</h3>
+                        <p class="text-amber-700 font-semibold mb-4">Founder & Chief Instructor</p>
+                        <p class="text-gray-600 mb-4">40+ years hunting experience. Specializes in big game tracking and marksmanship.</p>
+                        <div class="flex gap-2">
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Ballistics</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Tracking</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Teacher 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="http://static.photos/people/640x360/2" alt="Klara Bergmann" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Klara Bergmann</h3>
+                        <p class="text-amber-700 font-semibold mb-4">Wildlife Biology</p>
+                        <p class="text-gray-600 mb-4">PhD in Wildlife Management. Expert in animal behavior and conservation ethics.</p>
+                        <div class="flex gap-2">
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Biology</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Ethics</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Teacher 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="http://static.photos/people/640x360/3" alt="Hans Vogel" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Hans Vogel</h3>
+                        <p class="text-amber-700 font-semibold mb-4">Field Survival</p>
+                        <p class="text-gray-600 mb-4">Former military survival instructor. Teaches wilderness navigation and safety.</p>
+                        <div class="flex gap-2">
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Survival</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Navigation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Story Section -->
+    <section id="story" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">A Student's Journey</h2>
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <img src="http://static.photos/outdoor/1200x630/5" alt="Student experience" class="w-full h-96 object-cover">
+                <div class="p-8 md:p-12">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">From Novice to Master Hunter</h3>
+                    <blockquote class="text-lg italic text-gray-600 mb-8 border-l-4 border-amber-700 pl-6">
+                        "When I first came to Jagdschule Frühauf, I could barely tell a deer track from a rabbit's. After just six months with their instructors, I successfully hunted my first stag under their expert guidance."
+                    </blockquote>
+                    <div class="flex items-center gap-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Michael Schmidt" class="w-16 h-16 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Schmidt</h4>
+                            <p class="text-gray-600">Graduate, Class of 2022</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <p class="text-gray-600 mb-4">Michael's journey began with our Basic Hunter Certification course. He shares how the comprehensive approach at Jagdschule Frühauf gave him confidence in the field:</p>
+                        <p class="text-gray-600 mb-4">"What sets this school apart is the attention to detail. Instructor Frühauf spent hours with me perfecting my shooting stance, while Frau Bergmann's wildlife biology classes transformed how I interact with nature."</p>
+                        <p class="text-gray-600">"The field survival training with Herr Vogel was intense but invaluable. I recently spent three days alone in the Bavarian Forest using only what I learned here."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-100 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Courses</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-8">
+                <!-- Course 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden w-full md:w-1/2 max-w-md">
+                    <div class="bg-[#40534C] text-white p-4 text-center">
+                        <h3 class="text-xl font-bold">Basic Hunter Certification</h3>
+                    </div>
+                    <img src="http://static.photos/outdoor/640x360/1" alt="Basic Hunter Course" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col h-full">
+                        <p class="text-gray-600 mb-4">8-week comprehensive introduction to hunting</p>
+                        <ul class="space-y-2 mb-4">
+<li class="flex items-center">
+                                <i data-feather="check" class="text-amber-700 mr-2"></i>
+                                <span>Firearms safety</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-amber-700 mr-2"></i>
+                                <span>Wildlife identification</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-amber-700 mr-2"></i>
+                                <span>Basic tracking</span>
+                            </li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-2 text-center">€1,200</p>
+                        <div class="text-center mb-4">
+                            <a href="/basic-course.html" class="inline-block text-sm bg-[#40534C] hover:bg-[#1A3636] text-white font-bold py-2 px-4 rounded-lg transition duration-300">View Full Details</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="/basic-course.html" class="inline-block bg-[#40534C] hover:bg-[#1A3636] text-white font-bold py-2 px-6 rounded-lg transition duration-300 text-center">Enroll Now</a>
+                                <a href="/basic-course.html" class="inline-block border-2 border-[#40534C] text-[#40534C] hover:bg-[#40534C] hover:text-white font-bold py-2 px-6 rounded-lg transition duration-300 text-center">Course Details</a>
+                            </div>
+</div>
+</div>
+                </div>
+                <!-- Course 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden w-full md:w-1/2 max-w-md">
+                    <div class="bg-black text-white p-4 text-center">
+                        <h3 class="text-xl font-bold">Advanced Marksmanship</h3>
+                    </div>
+<img src="http://static.photos/outdoor/640x360/2" alt="Advanced Marksmanship Course" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col h-full">
+                        <p class="text-gray-600 mb-4">4-week intensive shooting program</p>
+                        <ul class="space-y-2 mb-4">
+<li class="flex items-center">
+                                <i data-feather="check" class="text-amber-700 mr-2"></i>
+                                <span>Long-range shooting</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-amber-700 mr-2"></i>
+                                <span>Ballistics calculation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-amber-700 mr-2"></i>
+                                <span>Adverse conditions</span>
+                            </li>
+                        </ul>
+                        <p class="text-2xl font-bold mb-2 text-center">€900</p>
+                        <div class="text-center mb-4">
+                            <a href="/advanced-course.html" class="inline-block text-sm bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-lg transition duration-300">View Full Details</a>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="/basic-course.html" class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-2 px-6 rounded-lg transition duration-300 text-center">Enroll Now</a>
+                                <a href="/advanced-course.html" class="inline-block border-2 border-black text-black hover:bg-black hover:text-white font-bold py-2 px-6 rounded-lg transition duration-300 text-center">Course Details</a>
+                            </div>
+</div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Testimonials Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">What Our Students Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="star" class="text-[#D6BD98] fill-[#D6BD98] mr-1"></i>
+                        <i data-feather="star" class="text-[#D6BD98] fill-[#D6BD98] mr-1"></i>
+                        <i data-feather="star" class="text-[#D6BD98] fill-[#D6BD98] mr-1"></i>
+                        <i data-feather="star" class="text-[#D6BD98] fill-[#D6BD98] mr-1"></i>
+                        <i data-feather="star" class="text-[#D6BD98] fill-[#D6BD98]"></i>
+</div>
+                    <p class="text-gray-600 mb-6">"The instructors at Jagdschule Frühauf are simply the best. Their patience and expertise helped me overcome my fear of firearms and become a confident, ethical hunter."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/2" alt="Anna Müller" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Anna Müller</h4>
+                            <p class="text-gray-600">Basic Hunter Certification</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="star" class="text-amber-500 fill-amber-500 mr-1"></i>
+                        <i data-feather="star" class="text-amber-500 fill-amber-500 mr-1"></i>
+                        <i data-feather="star" class="text-amber-500 fill-amber-500 mr-1"></i>
+                        <i data-feather="star" class="text-amber-500 fill-amber-500 mr-1"></i>
+                        <i data-feather="star" class="text-amber-500 fill-amber-500"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"After taking the Advanced Marksmanship course, I can confidently hit targets at 300m. Instructor Frühauf's techniques are revolutionary."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/3" alt="Thomas Weber" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Thomas Weber</h4>
+                            <p class="text-gray-600">Advanced Marksmanship</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-[#40534C] px-4 text-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Hunting Journey?</h2>
+                <p class="text-xl text-[#D6BD98] max-w-2xl mx-auto">Get in touch with our experts - we'll guide you every step of the way</p>
+            </div>
+            
+            <form class="bg-white rounded-xl shadow-2xl p-8 text-gray-800">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="lastname" class="block mb-2 font-medium">Last Name*</label>
+                        <input type="text" id="lastname" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#40534C] focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="surname" class="block mb-2 font-medium">Surname*</label>
+                        <input type="text" id="surname" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#40534C] focus:border-transparent">
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="email" class="block mb-2 font-medium">Email Address*</label>
+                        <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#40534C] focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="phone" class="block mb-2 font-medium">Mobile Number</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#40534C] focus:border-transparent">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block mb-2 font-medium">Your Message</label>
+                    <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#40534C] focus:border-transparent"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-[#D6BD98] hover:bg-[#c9af7f] text-[#1A3636] font-bold py-3 px-6 rounded-lg transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-16 bg-gray-100 px-4">
+<div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Trusted Partners</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col justify-center items-center p-4 bg-white rounded-lg shadow-md h-24">
+                    <img src="http://static.photos/black/80x80/1" alt="Bavarian Hunters Association" class="w-12 h-12 rounded-full mb-2">
+                    <span class="text-sm font-bold text-gray-700">Bavarian Hunters</span>
+                </div>
+                <div class="flex flex-col justify-center items-center p-4 bg-white rounded-lg shadow-md h-24">
+                    <img src="http://static.photos/black/80x80/2" alt="European Wildlife Foundation" class="w-12 h-12 rounded-full mb-2">
+                    <span class="text-sm font-bold text-gray-700">European Wildlife</span>
+                </div>
+                <div class="flex flex-col justify-center items-center p-4 bg-white rounded-lg shadow-md h-24">
+                    <img src="http://static.photos/black/80x80/3" alt="Huber Optics" class="w-12 h-12 rounded-full mb-2">
+                    <span class="text-sm font-bold text-gray-700">Huber Optics</span>
+                </div>
+                <div class="flex flex-col justify-center items-center p-4 bg-white rounded-lg shadow-md h-24">
+                    <img src="http://static.photos/black/80x80/4" alt="Alpine Outdoor Gear" class="w-12 h-12 rounded-full mb-2">
+                    <span class="text-sm font-bold text-gray-700">Alpine Outdoor</span>
+                </div>
+</div>
+        </div>
+    </section>
+    <!-- Footer Component -->
+    <custom-footer></custom-footer>
+    <legal-popups></legal-popups>
+
+    <!-- Component Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/legal-popups.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
