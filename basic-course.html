@@ -78,6 +78,7 @@
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="#" id="enroll-btn" class="bg-[#40534C] hover:bg-[#1A3636] text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-center">Enroll Now</a>
                         <a href="#" id="faq-btn" class="border-2 border-[#40534C] text-[#40534C] hover:bg-[#40534C] hover:text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-center">Have Questions?</a>
+                        <a href="/enrollment-form.pdf" class="border-2 border-[#40534C] text-[#40534C] hover:bg-[#40534C] hover:text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-center" download>Download Enrollment Form</a>
                     </div>
 </div>
             </div>
@@ -119,10 +120,100 @@
                     </div>
                 </div>
             </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Learning Materials</h2>
+                <p class="text-gray-600 mb-8">We use only the highest quality learning materials from renowned publishers and digital platforms to ensure your success:</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Books & Publications</h3>
+                        <div class="flex flex-wrap gap-6 items-center">
+                            <div class="flex flex-col items-center">
+                                <img src="http://static.photos/black/120x120/1" alt="Heintges Logo" class="w-20 h-20 rounded-full mb-2">
+                                <span class="text-sm text-gray-600">Heintges Hunting Guide</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img src="http://static.photos/black/120x120/2" alt="DJV Logo" class="w-20 h-20 rounded-full mb-2">
+                                <span class="text-sm text-gray-600">DJV Wildlife Manual</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Digital Learning</h3>
+                        <div class="flex flex-wrap gap-6 items-center">
+                            <div class="flex flex-col items-center">
+                                <img src="http://static.photos/black/120x120/3" alt="Jägerschmiede Logo" class="w-20 h-20 rounded-full mb-2">
+                                <span class="text-sm text-gray-600">Jägerschmiede App</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <img src="http://static.photos/black/120x120/4" alt="Waidwissen Logo" class="w-20 h-20 rounded-full mb-2">
+                                <span class="text-sm text-gray-600">Waidwissen Platform</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Firearms Instruction Section -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+                <h2 class="text-2xl font-bold mb-8 text-gray-800">Firearms Instruction</h2>
+                <p class="text-gray-600 mb-8">Master essential shooting techniques with our comprehensive firearms training program:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Clay Pigeons -->
+                    <div class="firearm-card group">
+                        <div class="relative overflow-hidden rounded-lg h-64">
+                            <img src="http://static.photos/outdoor/640x360/10" 
+                                 alt="Clay Pigeon Shooting" 
+                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                            <div class="absolute inset-0 bg-[#40534C] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 text-gray-800 group-hover:text-[#40534C] transition-colors">Clay Pigeons</h3>
+                        <p class="text-gray-600">Learn shotgun handling and moving target techniques with our professional skeet shooting instructors.</p>
+                    </div>
+
+                    <!-- 100m Rifle -->
+                    <div class="firearm-card group">
+                        <div class="relative overflow-hidden rounded-lg h-64">
+                            <img src="http://static.photos/outdoor/640x360/11" 
+                                 alt="100m Rifle Shooting" 
+                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                            <div class="absolute inset-0 bg-[#40534C] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 text-gray-800 group-hover:text-[#40534C] transition-colors">100m Rifle</h3>
+                        <p class="text-gray-600">Precision shooting techniques with various rifle types at stationary targets.</p>
+                    </div>
+
+                    <!-- Standing Position -->
+                    <div class="firearm-card group">
+                        <div class="relative overflow-hidden rounded-lg h-64">
+                            <img src="http://static.photos/outdoor/640x360/12" 
+                                 alt="Standing Position Shooting" 
+                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                            <div class="absolute inset-0 bg-[#40534C] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 text-gray-800 group-hover:text-[#40534C] transition-colors">Standing Position</h3>
+                        <p class="text-gray-600">Master the challenging standing shooting position with proper stance and breathing control.</p>
+                    </div>
+
+                    <!-- Running Boar -->
+                    <div class="firearm-card group">
+                        <div class="relative overflow-hidden rounded-lg h-64">
+                            <img src="http://static.photos/outdoor/640x360/13" 
+                                 alt="Running Boar Shooting" 
+                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                            <div class="absolute inset-0 bg-[#40534C] bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 text-gray-800 group-hover:text-[#40534C] transition-colors">Running Boar</h3>
+                        <p class="text-gray-600">Develop skills for shooting at moving targets with our specialized running boar range.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <custom-footer></custom-footer>
-    <script src="components/navbar.js"></script>
+<custom-footer></custom-footer>
+<script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
     <script src="components/legal-popups.js"></script>
     <script src="components/contact-popup.js"></script>

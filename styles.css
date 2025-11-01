@@ -22,6 +22,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #1A3636;
 }
+/* Mobile menu animation */
+.nav-links {
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
 /* Animation classes */
 .animate-on-scroll {
     opacity: 0;
@@ -80,6 +85,33 @@ body {
 
 .carousel-indicator.bg-opacity-100 {
     background-color: white !important;
+}
+/* Firearms Instruction Cards */
+.firearm-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.firearm-card:hover {
+    transform: translateY(-5px);
+}
+.firearm-card img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.firearm-card:hover img {
+    filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+    .firearm-card img {
+        filter: grayscale(0%);
+    }
+}
+/* Firearms cards on mobile */
+.firearm-card {
+    margin-bottom: 1.5rem;
 }
 
 /* Contact form styles */

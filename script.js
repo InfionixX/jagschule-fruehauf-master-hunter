@@ -1,6 +1,21 @@
+
+// Add hunting grounds to navbar links
+document.querySelectorAll('custom-navbar').forEach(navbar => {
+    const shadow = navbar.shadowRoot || navbar;
+    const navLinks = shadow.querySelector('.nav-links');
+    const contactLink = shadow.querySelector('a[href="#contact"]');
+    
+    if (navLinks && contactLink) {
+        const huntingGroundsLink = document.createElement('a');
+        huntingGroundsLink.href = '#hunting-grounds';
+        huntingGroundsLink.textContent = 'Hunting Grounds';
+        navLinks.insertBefore(huntingGroundsLink, contactLink);
+    }
+});
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
@@ -37,7 +52,18 @@ function initScrollAnimations() {
     });
 }
 // Initialize animations when page loads
-document.addEventListener('DOMContentLoaded', initScrollAnimations);
+document.addEventListener('DOMContentLoaded', function() {
+    initScrollAnimations();
+    
+    // Teacher popup functionality
+    const teacherPopup = document.querySelector('teacher-popup');
+    document.querySelectorAll('.learn-more-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const teacherData = JSON.parse(this.dataset.teacher);
+            teacherPopup.showTeacher(teacherData);
+        });
+    });
+});
 // Image carousel functionality
 function initCarousel(selector) {
     const carousels = document.querySelectorAll(selector);
@@ -97,26 +123,25 @@ function initCarousel(selector) {
         updateCarousel();
     });
 }
-
 // Contact form handling
 document.querySelector('#contact form').addEventListener('submit', function(e) {
     e.preventDefault();
     
     // Get form values
-    const formData = {
-        lastName: this.lastname.value,
-        surname: this.surname.value,
-        email: this.email.value,
-        phone: this.phone.value,
-        message: this.message.value
-    };
+    const formData = new FormData(this);
+    const fileInput = document.getElementById('enrollment-form');
+    
+    if (fileInput.files.length > 0) {
+        formData.append('enrollmentForm', fileInput.files[0]);
+    }
     
     // In a real implementation, you would send this to your backend
-    console.log('Form submitted:', formData);
+    console.log('Form submitted:', Object.fromEntries(formData));
     
     // Show success message
-    alert('Thank you for your message! We will contact you soon.');
+    alert('Thank you for your application! We will review your enrollment form and contact you soon.');
     this.reset();
+    fileInput.value = '';
 });
 // Course card hover effect
 const courseCards = document.querySelectorAll('#courses > div > div > div');
