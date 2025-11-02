@@ -37,7 +37,7 @@ class CustomNavbar extends HTMLElement {
 }
                 
                 .logo img {
-                    height: 50px;
+                    height: 60px;
                     margin-right: 1rem;
                 }
                 
@@ -220,27 +220,27 @@ transition: width 0.3s;
                         transform: rotate(180deg);
                     }
 .logo img {
-                        height: 40px;
+                        height: 60px;
                     }
                 }
 </style>
             <nav>
                 <div class="nav-container">
                     <a href="/" class="logo">
-<img src="http://static.photos/black/200x200/1" alt="Jagdschule Frühauf Logo">
+<img src="assets/_pictures/44636800604-removebg-preview.png" alt="Jagdschule Frühauf Logo">
                     </a>
                 <div class="nav-links">
-                    <a href="/#about">About Us</a>
-                    <a href="/#teachers">Our Teachers</a>
-                    <a href="/#story">Student Story</a>
+                    <a href="/#about">Über Uns</a>
+                    <a href="/#teachers">Unsere Dozenten</a>
+                    <a href="/#story">Erfahrungen</a>
                     <div class="dropdown">
-                        <a href="/#courses" class="dropdown-toggle">Our Courses <i data-feather="chevron-down"></i></a>
+                        <a href="/#courses" class="dropdown-toggle">Unsere Kurse <i data-feather="chevron-down"></i></a>
                         <div class="dropdown-menu">
-                            <a href="/basic-course.html">Basic Hunter Certification</a>
-                            <a href="/advanced-course.html">Advanced Marksmanship</a>
+                            <a href="/basic-course.html">Gruppenkurs</a>
+                            <a href="/advanced-course.html">Individualkurs</a>
                         </div>
                     </div>
-                    <a href="/#contact">Contact</a>
+                    <a href="/#contact">Kontakt</a>
 </div>
                     <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
                         <span class="hamburger">

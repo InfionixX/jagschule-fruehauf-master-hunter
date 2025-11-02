@@ -134,20 +134,20 @@ class TeacherPopup extends HTMLElement {
               <div class="teacher-stats">
                 <div class="stat-item">
                   <div class="stat-number" id="teacher-years">20+</div>
-                  <div class="stat-label">Years Experience</div>
+                  <div class="stat-label">Erfahrung</div>
                 </div>
                 <div class="stat-item">
                   <div class="stat-number" id="teacher-students">1000+</div>
-                  <div class="stat-label">Students Trained</div>
+                  <div class="stat-label">Schüler unterichtet</div>
                 </div>
                 <div class="stat-item">
                   <div class="stat-number" id="teacher-certifications">5</div>
-                  <div class="stat-label">Certifications</div>
+                  <div class="stat-label">Auszeichnungen</div>
                 </div>
               </div>
               
               <div class="teacher-expertise">
-                <h3>Areas of Expertise</h3>
+                <h3>Bereiche meiner Expertise</h3>
                 <div class="expertise-list" id="teacher-expertise"></div>
               </div>
             </div>
