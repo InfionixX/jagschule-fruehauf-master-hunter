@@ -22,7 +22,7 @@ class CustomNavbar extends HTMLElement {
                 .nav-container {
                     max-width: 1200px;
                     margin: 0 auto;
-                    padding: 1rem 2rem;
+                    padding: 0.5rem 2rem;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -37,7 +37,7 @@ class CustomNavbar extends HTMLElement {
 }
                 
                 .logo img {
-                    height: 60px;
+                    height: 100px;
                     margin-right: 1rem;
                 }
                 

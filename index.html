@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="assets/_favicon/favicon-16x16.png">
 </head>
 <body class="bg-gray-50">
     <!-- Navbar Component -->
@@ -57,9 +58,11 @@
                         <h3 class="text-2xl font-bold mb-2 text-gray-800">Marko Frühauf</h3>
                         <p class="text-amber-700 font-semibold mb-4">Gründer & Büchsenmachermeister</p>
                         <p class="text-gray-600 mb-4">30+ Jahre Erfahrung als Jäger. Spezialisiert auf Jagdwaffen und deren Handhabung.</p>
-                        <div class="flex gap-2">
-                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Schießtraining</span>
+                        <div class="flex gap-2" style="flex-direction: column;">
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">praktische Schießübungen</span>
                             <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Waffenhandhabung</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Lang- & Kurzwaffen</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Munition</span>
                         </div>
                         <button class="mt-4 text-sm bg-[#40534C] hover:bg-[#1A3636] text-white font-bold py-2 px-4 rounded-lg transition duration-300 learn-more-btn" 
                                 data-teacher='{
@@ -67,7 +70,7 @@
                                     "title": "Gründer & Büchsenmachermeister",
                                     "bio": "Mit über 30 Jahren jagdlicher Erfahrung und einer Meisterqualifikation im Büchsenmacherhandwerk seit 1999 verbindet Marko Frühauf handwerkliche Präzision mit tiefem Fachwissen rund um Jagdwaffen und deren Handhabung. Als Gründer der Jagdschule steht er für höchste Ausbildungsqualität, technische Kompetenz und praxisorientierte Wissensvermittlung.",
                                     "image": "assets/_pictures/Frühauf_Bild.jpg",
-                                    "years": "40+",
+                                    "years": "30+",
                                     "students": "500+",
                                     "certifications": "5",
                                     "expertise": ["Schießausbildung", "langjährige Jagdpraxis", "Büchsenmacherhandwerk", "Waffenhandhabung"]
@@ -78,53 +81,57 @@
 </div>
                 <!-- Teacher 2 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <img src="http://static.photos/people/640x360/2" alt="Klara Bergmann" class="w-full h-64 object-cover">
+                    <img src="assets/_pictures/P1010061_Squere.jpeg" alt="Klara Bergmann" class="w-full h-64 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Klara Bergmann</h3>
-                        <p class="text-amber-700 font-semibold mb-4">Wildlife Biology</p>
-                        <p class="text-gray-600 mb-4">PhD in Wildlife Management. Expert in animal behavior and conservation ethics.</p>
-                        <div class="flex gap-2">
-                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Biology</span>
-                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Ethics</span>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Silvio Eppler</h3>
+                        <p class="text-amber-700 font-semibold mb-4">Berufsjäger & bestätigter Schweißhundeführer</p>
+                        <p class="text-gray-600 mb-4">Langjährige Erfahrung als Berufsjäger.</p>
+                        <div class="flex gap-2" style="flex-direction: column;">
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Haar- & Federwild / Wildkrankheiten</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Jagdhunde</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Jagdliche Praxis</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Jagdrecht</span>
                         </div>
                         <button class="mt-4 text-sm bg-[#40534C] hover:bg-[#1A3636] text-white font-bold py-2 px-4 rounded-lg transition duration-300 learn-more-btn" 
                                 data-teacher='{
-                                    "name": "Dr. Klara Bergmann",
-                                    "title": "Wildlife Biologist & Conservation Specialist",
-                                    "bio": "Dr. Bergmann holds a PhD in Wildlife Management from the University of Munich and has published numerous papers on sustainable hunting practices. With field experience across three continents, she brings a global perspective to wildlife conservation. Her innovative approaches to human-wildlife conflict resolution have been adopted by several European wildlife agencies.",
-                                    "image": "http://static.photos/people/640x360/2",
-                                    "years": "15+",
-                                    "students": "1800+",
-                                    "certifications": "5",
-                                    "expertise": ["Biology", "Ethics", "Conservation", "Ecology", "Wildlife Law"]
+                                    "name": "Silvio Eppler",
+                                    "title": "Berufsjäger & bestätigter Schweißhundeführer",
+                                    "bio": "Silvio Eppler ist ein ausgewiesener Experte im Bereich der Nachsuche mit langjähriger Erfahrung als Berufsjäger. Als bestätigter Schweißhundeführer bringt er fundiertes Fachwissen und ein hohes Maß an Praxisnähe in die Arbeit mit. Er ist aktives Mitglied im renommierten Schweißhundeclub Hirschmann und hat im Laufe seiner Karriere zahlreiche erfolgreiche Nachsuchen durchgeführt.",
+                                    "image": "assets/_pictures/P1010061.jpeg",
+                                    "years": "30+",
+                                    "students": "500+",
+                                    "certifications": "7",
+                                    "expertise": ["Jagdhunde", "Schweißarbeit", "Wildkrankheiten", "Waldbewirtschaftung"]
                                 }'>
-                            Learn more about me
+                            Erfahre mehr über mich!
                         </button>
                     </div>
 </div>
                 <!-- Teacher 3 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <img src="http://static.photos/people/640x360/3" alt="Hans Vogel" class="w-full h-64 object-cover">
+                    <img src="assets/_pictures/Andreas.jpeg" alt="Hans Vogel" class="w-full h-64 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Hans Vogel</h3>
-                        <p class="text-amber-700 font-semibold mb-4">Field Survival</p>
-                        <p class="text-gray-600 mb-4">Former military survival instructor. Teaches wilderness navigation and safety.</p>
-                        <div class="flex gap-2">
-                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Survival</span>
-                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Navigation</span>
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Andreas Hoffmann</h3>
+                        <p class="text-amber-700 font-semibold mb-4">Berufsjäger & Schweißhundeführer</p>
+                        <p class="text-gray-600 mb-4">Langjährige Erfahrung als Berufsjäger.</p>
+                        <div class="flex gap-2" style="flex-direction: column;">
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Land- und Waldbau</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Wildhege</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Naturschutz</span>
+                            <span class="bg-amber-100 text-amber-800 text-sm px-3 py-1 rounded-full">Versorgen und Verwerten von Wild</span>
                         </div>
                         <button class="mt-4 text-sm bg-[#40534C] hover:bg-[#1A3636] text-white font-bold py-2 px-4 rounded-lg transition duration-300 learn-more-btn" 
                                 data-teacher='{
-                                    "name": "Hans Vogel",
-                                    "title": "Field Survival Expert",
-                                    "bio": "A veteran of the German Special Forces, Hans Vogel brings 12 years of military survival training experience to Jagdschule Frühauf. His expertise in extreme environment survival has been tested in Arctic, desert, and jungle conditions. Hans has led numerous search-and-rescue operations and developed the survival curriculum now used by several European hunting associations.",
-                                    "image": "http://static.photos/people/640x360/3",
+                                    "name": "Andreas Hoffmann",
+                                    "title": "Berufsjäger & Schweißhundeführer",
+                                    "bio": "Andreas Hoffmann ist ausgebildeter Berufsjäger und erfahrener Jagdführer. Mit umfassender Praxis in der Wildhege und der Gestaltung optimaler Lebensräume bringt er fundiertes Wissen in die nachhaltige Revierbewirtschaftung ein. Als zertifizierter Schweißhundeführer hat er mehrere Hunde erfolgreich ausgebildet und geführt.",
+                                    "image": "assets/_pictures/IMG_0813.jpeg",
                                     "years": "25+",
-                                    "students": "3200+",
+                                    "students": "500+",
                                     "certifications": "6",
-                                    "expertise": ["Survival", "Navigation", "First Aid", "Tracking", "Shelter Building"]
+                                    "expertise": ["Jagdführung", "Schweißarbeit", "Habitatserrichtung", "Ausbildung von Jagdhunden", "Land- und Waldbau"]
                                 }'>
-                            Learn more about me
+                            Erfahre mehr über mich!
                         </button>
                     </div>
 </div>
