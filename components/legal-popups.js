@@ -60,16 +60,17 @@ class LegalPopups extends HTMLElement {
           <button class="close-btn" id="close-impressum">×</button>
           <h2>Impressum</h2>
           <h3>Angaben gemäß § 5 TMG:</h3>
-          <p>Jagdschule Frühauf GmbH<br>
-          Waldstraße 45<br>
-          83700 Bavaria<br>
+          <p>Büchsenmacherei & Jagdschule Marko Frühauf<br>
+          Rappelsdorf - Alte Dorfstraße 18<br>
+          98553 Schleusingen<br>
           Deutschland</p>
           
           <p><strong>Vertreten durch:</strong><br>
-          Dieter Frühauf</p>
+          Marko Frühauf</p>
           
           <p><strong>Kontakt:</strong><br>
-          Telefon: +49 89 1234567<br>
+          Telefon:  036841/31193<br>
+          Mobil:  0170/5474789<br>
           E-Mail: info@jagdschule-fruehauf.de</p>
           
           <p><strong>Registereintrag:</strong><br>
@@ -79,12 +80,20 @@ class LegalPopups extends HTMLElement {
           
           <p><strong>Umsatzsteuer-ID:</strong><br>
           Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
-          DE123456789</p>
+          USt.-ID.: DE 201852098</p>
           
           <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
-          Dieter Frühauf<br>
-          Waldstraße 45<br>
-          83700 Bavaria</p>
+          Marko Frühauf<br>
+          Rappelsdorf - Alte Dorfstraße 18<br>
+          98553 Schleusingen</p>
+
+          <p><strong>Links:</strong><br>
+          Im Sinne des Urteils des Landgerichts Hamburg vom 12. Mai 1998 (AZ 312 O 85/98 - Haftung für Links) distanzieren wir uns ausdrücklich von den Inhalten aller externen Verbindungen ("Links"), auf die direkt oder indirekt verwiesen wird. Ausgenommen sind die Inhalte die eindeutig mit Jagdschule Frühauf bzw. dem entsprechenden Logo gekennzeichnet sind.
+          </p>
+
+          <p><strong>Urheberrecht und Copyright:</strong><br>
+          Alle Rechte vorbehalten. Warenzeichen und Markennamen gehören ihren jeweiligen Eigentümern und dienen hier nur zur Veranschaulichung. Design, Quellcode, Banner, Grafiken, Fotos usw. unterliegen dem Urheberrecht  des jeweiligen Autors oder Eigentümer von Marko Frühauf. Sämtliche auf dieser Webseite wiedergegebenen Abbildungen und Texte sind urheberrechtlich geschützt. Alle Rechte der Verbreitung bzw. Sendung auch durch Film, Funk und Fernsehen sowie durch Übermittlung in Computernetzwerken jeder Art, fotomechanische Wiedergabe, Ton- und Datenträger jeder Art, auszugsweisen Nachdruck oder Einspeicherung und Rückgewinnung in Datenverarbeitungsanlagen aller Art sind vorbehalten und bedürfen der schriftlichen Zustimmung ihrer Eigentümer. Das Anzeigen unserer Webseite inklusive aller per Link verbundenen Seiten in externen Frameseiten ist untersagt. Zuwiderhandlungen unterliegen den Strafbestimmungen des Urheberrechtsgesetzes.
+          </p>
         </div>
       </div>
       
@@ -94,7 +103,16 @@ class LegalPopups extends HTMLElement {
           <h2>Datenschutzerklärung</h2>
           <h3>1. Datenschutz auf einen Blick</h3>
           <p><strong>Allgemeine Hinweise</strong><br>
-          Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen.</p>
+          Die Firma Büchsenmacherei & Jagdschule Marko Frühauf gewährleistet, dass die anfallenden Kundendaten lediglich im Zusammenhang mit der Abwicklung der Kundenanfragen erhebt, bearbeitet, speichert und nutzt sowie nur zu internen Zwecken. Eine Weitergabe der Adressen an Dritte und insbesondere an gewerbliche Adressenhändler oder andere Unternehmen ist ausgeschlossen.
+          <br>
+          Soweit der Kunde eine aktive Datennutzung für interne Zwecke durch die Firma Büchsenmacherei & Jagdschule Marko Frühauf nicht möchte, ist der Kunde gemäß § 28 Absatz 4 Bundesdatenschutzgesetz (BDSG) berechtigt, dieser Nutzung und Verarbeitung jederzeit zu widersprechen. Hierzu genügt es, eine entsprechenden E-Mail an mf@gebrueder-fruehauf.de zu senden. Der besondere Fall einer gesetzlich vorgeschriebenen Datensperrung anstelle einer Datenlöschung gemäß § 35 Absatz 3 Bundesdatenschutzgesetz (BDSG) bleibt hierbei unberührt.
+          <br>
+          Datenübermittlung und -protokollierung zu systeminternen und statistischen Zwecken
+          <br>
+          Der Internet-Browser des Kunden übermittelt beim Zugriff auf diese Website aus technischen Gründen automatisch Daten an den Webserver.
+          <br>
+          Jeder Datensatz besteht aus dem Datum und Uhrzeit des Zugriffs, URL der verweisenden Webseite, abgerufene Datei, Menge der gesendeten Daten, Browsertyp und -version, Betriebssystem sowie der IP-Adresse des Kunden. Eine Zuordnung dieser Daten zu einer bestimmten Person ist nicht möglich. Die gespeicherten Daten werden nur intern und ausschließlich zu statistischen Zwecken ausgewertet.
+          </p>
           
           <h3>2. Hosting</h3>
           <p><strong>Externes Hosting</strong><br>
@@ -111,8 +129,36 @@ class LegalPopups extends HTMLElement {
           <h3>5. Rechte der betroffenen Person</h3>
           <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch.</p>
           
-          <h3>6. Analyse-Tools</h3>
-          <p>Diese Website verwendet keine Analyse-Tools.</p>
+          <h3>6. Einsatz von Cookies</h3>
+          <p>Beim ersten Besuch auf diese Website durch den Kunden wird ein Cookie an den Browser des Kunden gesendet. Dieses wird auf der Festplatte des Kunden gespeichert. Das Cookie dient bei einem erneuten Besuch ausschließlich der Feststellung, ob dieser Kunde diese Website schon einmal besucht hat.</p>
+
+          <h3>7. Verwendung von Facebook-Plugins</h3>
+          <p>Die Firma Büchsenmacherei & Jagdschule Marko Frühauf verwendet Plugins des sozialen Netzwerkes facebook.com. Betreiber ist Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA ("Facebook").
+          
+          <br>
+          Wenn der Kunde mit einem Plugin die Website der Firma Büchsenmacherei & Jagdschule Marko Frühauf aufruft, wird eine Verbindung zu den Facebook-Servern hergestellt und dabei das Plugin durch Mitteilung an Ihren Browser auf der Internetseite dargestellt. Hierdurch wird an den Facebook-Server übermittelt, dass der Kunde die Website der Firma Büchsenmacherei & Jagdschule Marko Frühauf besucht hat. Ist der Kunde dabei als Mitglied bei Facebook eingeloggt, ordnet Facebook diese Information dem persönlichen Facebook-Benutzerkonto des Kunden zu.
+
+          <br>
+          Bei der Nutzung der Plugin-Funktionen (z.B. Anklicken des „Gefällt mir“-Buttons, Abgabe eines Kommentars) werden diese Informationen ebenfalls dem Facebook-Konto des Kunden zugeordnet, welches der Kunde nur durch Ausloggen vor Nutzung des Plugins verhindern kann.
+
+          <br>
+          Nähere Informationen zur Erhebung und Nutzung der Daten durch Facebook, über Rechte und Möglichkeiten zum Schutz der Privatsphäre des Kunden sind in den Datenschutzhinweisen von Facebook zu finden.
+
+          <br>
+          Der Kunde erklärt sich mit der Nutzung dieser Website mit den erläuterten Punkten „Verwendung von Facebook-Plugins“ einverstanden.
+          </p>
+
+          <h3>8. Auskunbftsrecht</h3>
+          <p><strong>Auskunft, Löschung, Sperrung</strong><br>
+          Der Kunde hat das Recht, gemäß § 34 Bundesdatenschutzgesetz (BDSG), Auskunft über die zu seiner Person gespeicherten Daten zu erhalten. Auf Anforderung teilt die Firma Büchsenmacherei & Jagdschule Marko Frühauf dem Kunden entsprechend geltendem Recht in schriftlicher Form mit, welche persönlichen Daten des Kunden bei der Firma Büchsenmacherei & Jagdschule Marko Frühauf gespeichert sind. Diese Auskunft ist unentgeltlich. mf@gebrueder-fruehauf.de.
+          </p>
+
+          <h3>9. Datenschutzbeauftragter</h3>
+          <p>Datenschutzbeauftragter gemäß § 4 f Absatz 1 Satz 1 Bundesdatenschutzgesetz (BDSG)
+          <br>
+          Marko FrühaufRappelsdorf - Alte Dorfstraße 18D-98553 SchleusingenTelefon +49 36841-31993E-Mai mf@gebrueder-fruehauf.de
+          </p>
+
         </div>
       </div>
     `;

@@ -27,6 +27,7 @@ class CustomFooter extends HTMLElement {
                 .footer-logo img {
                     height: 50px;
                     margin-right: 1rem;
+                    border-radius: 50%;
                 }
                 
                 .footer-logo-text {
@@ -110,34 +111,32 @@ class CustomFooter extends HTMLElement {
             <div class="footer-container">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <img src="http://static.photos/black/200x200/1" alt="Jagdschule Frühauf Logo">
+                        <img src="assets/_pictures/44636800604.png" alt="Jagdschule Frühauf Logo">
                         <span class="footer-logo-text">Jagdschule Frühauf</span>
                     </div>
-                    <p>Europe's premier hunting education institution since 1995. Committed to excellence in hunter training and wildlife conservation.</p>
+                    <p>Die Jagdschule mit den meisten Erfahrungswerten!</p>
                     <div class="social-links">
-                        <a href="#"><i data-feather="facebook"></i></a>
-                        <a href="#"><i data-feather="instagram"></i></a>
-                        <a href="#"><i data-feather="youtube"></i></a>
-                        <a href="#"><i data-feather="linkedin"></i></a>
+                        <a href="https://www.facebook.com/jagdschule.fruehauf/"><i data-feather="facebook"></i></a>
+                        <a href="https://www.instagram.com/jagdschule_fruehauf/"><i data-feather="instagram"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-links-container">
                     <h3 class="footer-heading">Quick Links</h3>
                     <div class="footer-links">
-                        <a href="#about">About Us</a>
-                        <a href="#teachers">Our Teachers</a>
-                        <a href="#story">Student Story</a>
-                        <a href="#courses">Our Courses</a>
-                        <a href="#contact">Contact</a>
+                        <a href="#about">Über Uns</a>
+                        <a href="#teachers">Unsere Dozenten</a>
+                        <a href="#story">Erfahrungen</a>
+                        <a href="#courses">Unsere Kurse</a>
+                        <a href="#contact">Kontakt</a>
                     </div>
                 </div>
                 
                 <div class="footer-contact">
-                    <h3 class="footer-heading">Contact Us</h3>
-                    <p><i data-feather="map-pin"></i> Waldstraße 45, 83700 Bavaria, Germany</p>
+                    <h3 class="footer-heading">Kontaktiere Uns</h3>
+                    <p><i data-feather="map-pin"></i>Alte Dorfstraße 18, 98553 Schleusingen, Deutschland</p>
                     <p><i data-feather="phone"></i> +49 89 1234567</p>
-                    <p><i data-feather="mail"></i> info@jagdschule-fruehauf.de</p>
+                    <p><i data-feather="mail"></i> Tel: 036841 31193 | Mobil: 0170 5474789 </p>
                 </div>
             </div>
             <div class="copyright">
