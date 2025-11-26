@@ -116,8 +116,12 @@ class CustomFooter extends HTMLElement {
                     </div>
                     <p>Die Jagdschule mit den meisten Erfahrungswerten!</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/jagdschule.fruehauf/"><i data-feather="facebook"></i></a>
-                        <a href="https://www.instagram.com/jagdschule_fruehauf/"><i data-feather="instagram"></i></a>
+                        <a href="https://www.facebook.com/jagdschule.fruehauf/" aria-label="Facebook">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jagdschule_fruehauf/" aria-label="Instagram">
+                            <i data-feather="instagram"></i>
+                        </a>
                     </div>
                 </div>
                 
@@ -133,7 +137,7 @@ class CustomFooter extends HTMLElement {
                 </div>
                 
                 <div class="footer-contact">
-                    <h3 class="footer-heading">Kontaktiere Uns</h3>
+                    <h3 class="footer-heading">Kontakt</h3>
                     <p><i data-feather="map-pin"></i>Alte Dorfstraße 18, 98553 Schleusingen, Deutschland</p>
                     <p><i data-feather="phone"></i> +49 89 1234567</p>
                     <p><i data-feather="mail"></i> Tel: 036841 31193 | Mobil: 0170 5474789 </p>

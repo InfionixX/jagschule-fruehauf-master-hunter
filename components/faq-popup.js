@@ -66,65 +66,59 @@ class FAQPopup extends HTMLElement {
       <div class="popup-overlay" id="faq-popup">
         <div class="popup-content">
           <button class="close-btn" id="close-faq-popup">×</button>
-          <h2>Frequently Asked Questions</h2>
+          <h2>Häufig gestellte Fragen</h2>
           
           <div class="faq-item">
             <div class="faq-question">
-              <span>What are the prerequisites for the Basic Hunter Certification course?</span>
+              <span>Welche Voraussetzungen gibt es für den Grundkurs zur Jägerprüfung?</span>
               <i data-feather="chevron-down"></i>
             </div>
             <div class="faq-answer">
-              No prior hunting experience is required for our Basic Hunter Certification course. However, participants must be at least 18 years old and pass a basic background check for firearm handling.
+              Für unseren Grundkurs zur Jägerprüfung sind keine Vorkenntnisse im Jagen erforderlich. Die Teilnehmer müssen jedoch mindestens 18 Jahre alt sein und eine grundlegende Zuverlässigkeitsprüfung für den Umgang mit Schusswaffen bestehen.
             </div>
           </div>
           
           <div class="faq-item">
             <div class="faq-question">
-              <span>What equipment do I need to bring for the courses?</span>
+              <span>Welche Ausrüstung muss ich für die Kurse mitbringen?</span>
               <i data-feather="chevron-down"></i>
             </div>
             <div class="faq-answer">
-              For the Basic Hunter Certification, we provide all necessary equipment including firearms and ammunition. You only need to bring appropriate outdoor clothing and footwear. For advanced courses, we'll provide a detailed equipment list upon enrollment.
+              Für den Gruppenkurs sowie für den Individualkurs stellen wir alle notwendigen Ausrüstungen, einschließlich Waffen und Munition, zur Verfügung. Geeignete Outdoor-Bekleidung und sind jedoch für anstehende Reviergänge von Vorteil.
             </div>
           </div>
           
           <div class="faq-item">
             <div class="faq-question">
-              <span>Are the courses available in English?</span>
+              <span>Wie lautet die Stornierungsrichtlinie?</span>
               <i data-feather="chevron-down"></i>
             </div>
             <div class="faq-answer">
-              Yes, all our courses are conducted in both German and English. Our instructors are fluent in both languages and course materials are provided in both languages as well.
+              Bei Abschluss des Ausbildungsvertrages wird über die entsprechende Stornierungsdauer informiert.
             </div>
           </div>
           
           <div class="faq-item">
             <div class="faq-question">
-              <span>What is the cancellation policy?</span>
+              <span>Bieten Sie Unterkünfte für Teilnehmer an?</span>
               <i data-feather="chevron-down"></i>
             </div>
             <div class="faq-answer">
-              You may cancel your enrollment up to 14 days before the course start date for a full refund. Cancellations within 14 days will receive a 50% refund. No refunds are available after the course begins.
+              Die Jagdschule selbst nicht, jedoch gibt es zahlreiche Unterkünfte in der nährenen Umgebung.
+              <br>Empfehlungen:</br>
+              <ul>
+                <li><a href="https://www.schuetzenhofxxl.de/" target="_blank" rel="noopener">Hotel Schützenhof XXL</a></li>
+                <li><a href="https://www.hotel-waldschloss.de/" target="_blank" rel="noopener">Hotel Waldschloss</a></li>
             </div>
           </div>
           
           <div class="faq-item">
             <div class="faq-question">
-              <span>Do you offer accommodation for students?</span>
+              <span>Wie lange ist die Zertifizierung gültig?</span>
               <i data-feather="chevron-down"></i>
             </div>
             <div class="faq-answer">
-              Yes, we have on-campus lodging available at an additional cost. Alternatively, we can provide recommendations for nearby hotels and guesthouses to suit various budgets.
-            </div>
-          </div>
-          
-          <div class="faq-item">
-            <div class="faq-question">
-              <span>How long is the certification valid?</span>
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-              The Basic Hunter Certification is valid for life, though we recommend periodic refresher courses. Some specialized certifications (like certain safety certifications) may require renewal every 3-5 years depending on regional regulations.
+              Die bestandene Jagdscheinprüfung ist unbefristet gültig. 
             </div>
           </div>
         </div>
