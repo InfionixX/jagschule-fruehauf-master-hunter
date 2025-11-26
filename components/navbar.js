@@ -24,8 +24,8 @@ class CustomNavbar extends HTMLElement {
                     margin: 0 auto;
                     padding: 0.5rem 2rem;
                     display: flex;
-                    flex-direction: column;
                     align-items: center;
+                    justify-content: center;
                 }
                 
                 .logo {
@@ -34,7 +34,6 @@ class CustomNavbar extends HTMLElement {
                     font-weight: 700;
                     font-size: 1.5rem;
                     color: #40534C;
-                    margin-bottom: 1rem;
                 }
                 
                 .logo img {
@@ -44,6 +43,7 @@ class CustomNavbar extends HTMLElement {
                 .nav-links {
                     display: flex;
                     gap: 2rem;
+                    justify-content: center;
                 }
                 .nav-links a {
                     color: #333;
@@ -52,6 +52,7 @@ class CustomNavbar extends HTMLElement {
                     position: relative;
                     padding: 0.5rem 0;
                     transition: color 0.3s;
+                    
                 }
                 
                 .dropdown {
@@ -119,28 +120,11 @@ transition: width 0.3s;
                 .mobile-menu-btn {
                     display: none;
                     background: #40534C;
-                    border: 2px solid white;
+                    border: none;
                     border-radius: 8px;
-                    padding: 12px 10px;
+                    padding: 12px;
                     cursor: pointer;
-                    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-                    z-index: 1001; /* Ensure it stays above the collapsible menu */
-                    position: relative;
-                    margin-top: 1rem; /* Move the button below the logo */
-                }
-                
-                .mobile-menu-btn.active {
-                    position: absolute;
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    height: auto; /* Maintain height during animation */
-                }
-                
-                .mobile-menu-btn:hover {
-                    background: #1A3636;
-                    transform: scale(1.05);
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
                 }
                 
                 .hamburger {
@@ -156,112 +140,64 @@ transition: width 0.3s;
                     height: 2px;
                     width: 100%;
                     background: white;
-                    transition: all 0.3s ease;
                 }
                 
-                .nav-links.active {
-                    top: 120px; /* Adjust to appear below the logo */
-                }
-
-                .nav-links.active + .mobile-menu-btn .hamburger-line:nth-child(1) {
-                    transform: translateY(8px) rotate(45deg);
-                }
-                
-                .nav-links.active + .mobile-menu-btn .hamburger-line:nth-child(2) {
-                    opacity: 0;
-                }
-                
-                .nav-links.active + .mobile-menu-btn .hamburger-line:nth-child(3) {
-                    transform: translateY(-8px) rotate(-45deg);
-                }
-@media (max-width: 768px) {
-                    .nav-links {
-                        position: fixed;
-                        top: 120px; /* Adjust to appear below the logo */
-                        left: 0;
-                        right: 0;
-                        background: white;
-                        flex-direction: column;
-                        padding: 2rem;
-                        gap: 1.5rem;
-                        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-                        transform: translateY(-150%);
-                        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                        z-index: 999;
+                @media (max-width: 768px) {
+                    .nav-container {
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding: 0.5rem 1rem;
                     }
                     
-                    .dropdown-menu {
-                        position: static;
-                        box-shadow: none;
-                        padding: 0;
-                        margin-top: 0.5rem;
-                        margin-left: 1rem;
-                        opacity: 1;
-                        visibility: visible;
-                        transform: none;
-                        display: none;
+                    .logo img {
+                        height: 80px;
                     }
                     
-                    .dropdown-menu a {
-                        padding: 0.5rem 0;
-                    }
-                    
-                    .dropdown.active .dropdown-menu {
-                        display: block;
-                    }
-.nav-links.active {
-                        transform: translateY(0);
-                    }
-                    
-                    .nav-links a {
-                        padding: 0.75rem;
-                        border-bottom: 1px solid #f3f3f3;
-                    }
-                    
-                    .nav-links a:hover::after {
-                        width: 0;
-                    }
                     .mobile-menu-btn {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                     }
                     
-                    .dropdown-toggle i {
-                        transition: transform 0.3s;
+                    .nav-links {
+                        position: fixed;
+                        top: 95px;
+                        left: 0;
+                        right: 0;
+                        background: white;
+                        flex-direction: column;
+                        padding: 1.5rem;
+                        gap: 1rem;
+                        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                        transform: translateY(-150%);
+                        transition: transform 0.4s ease;
+                        z-index: 999;
                     }
                     
-                    .dropdown.active .dropdown-toggle i {
-                        transform: rotate(180deg);
-                    }
-.logo img {
-                        height: 100px;
+                    .nav-links.active {
+                        transform: translateY(0);
                     }
                 }
-
-                /* Add padding to the body to prevent overlap */
-                body {
-                    padding-top: 120px; /* Adjust this value based on the navbar height */
-                }
-</style>
+            </style>
             <nav>
                 <div class="nav-container">
                     <a href="/" class="logo">
-<img src="assets/_pictures/44636800604-removebg-preview.png" alt="Jagdschule Frühauf Logo">
+                        <img src="assets/_pictures/44636800604-removebg-preview.png" alt="Jagdschule Frühauf Logo">
                     </a>
-                <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span class="hamburger">
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                        <span class="hamburger-line"></span>
-                    </span>
-                </button>
+                    <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span class="hamburger">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </span>
+                    </button>
+                </div>
                 <div class="nav-links">
                     <a href="/#about">Über Uns</a>
                     <a href="/#teachers">Unsere Dozenten</a>
                     <a href="/#story">Erfahrungen</a>
                     <div class="dropdown">
-                        <a href="/#courses" class="dropdown-toggle">Unsere Kurse <i data-feather="chevron-down"></i></a>
+                        <a href="/#courses" class="dropdown-toggle">Unsere Kurse</a>
                         <div class="dropdown-menu">
                             <a href="/basic-course.html">Gruppenkurs</a>
                             <a href="/advanced-course.html">Individualkurs</a>
@@ -269,7 +205,6 @@ transition: width 0.3s;
                     </div>
                     <a href="/#contact">Kontakt</a>
                 </div>
-</div>
             </nav>
         `;
         // Initialize Feather Icons and mobile menu toggle
