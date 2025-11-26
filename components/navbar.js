@@ -181,7 +181,7 @@ transition: width 0.3s;
             </style>
             <nav>
                 <div class="nav-container">
-                    <a href="/" class="logo">
+                    <a href="/#" class="logo">
                         <img src="assets/_pictures/44636800604-removebg-preview.png" alt="Jagdschule Frühauf Logo">
                     </a>
                     <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
