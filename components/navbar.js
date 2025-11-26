@@ -193,17 +193,17 @@ transition: width 0.3s;
                     </button>
                 </div>
                 <div class="nav-links">
-                    <a href="/#about">Über Uns</a>
-                    <a href="/#teachers">Unsere Dozenten</a>
-                    <a href="/#story">Erfahrungen</a>
+                    <a href="#about">Über Uns</a>
+                    <a href="#teachers">Unsere Dozenten</a>
+                    <a href="#story">Erfahrungen</a>
                     <div class="dropdown">
-                        <a href="/#courses" class="dropdown-toggle">Unsere Kurse</a>
+                        <a href="#courses" class="dropdown-toggle">Unsere Kurse</a>
                         <div class="dropdown-menu">
-                            <a href="/basic-course.html">Gruppenkurs</a>
-                            <a href="/advanced-course.html">Individualkurs</a>
+                            <a href="basic-course.html">Gruppenkurs</a>
+                            <a href="advanced-course.html">Individualkurs</a>
                         </div>
                     </div>
-                    <a href="/#contact">Kontakt</a>
+                    <a href="#contact">Kontakt</a>
                 </div>
             </nav>
         `;
