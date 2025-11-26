@@ -193,7 +193,7 @@ transition: width 0.3s;
                     </button>
                 </div>
                 <div class="nav-links">
-                    <a href="jagschule-fruehauf-master-hunter/index.html#about">Über Uns</a>
+                    <a href="./#about">Über Uns</a>
                     <a href="#teachers">Unsere Dozenten</a>
                     <a href="#story">Erfahrungen</a>
                     <div class="dropdown">
