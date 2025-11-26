@@ -24,7 +24,7 @@ class CustomNavbar extends HTMLElement {
                     margin: 0 auto;
                     padding: 0.5rem 2rem;
                     display: flex;
-                    justify-content: space-between;
+                    flex-direction: column;
                     align-items: center;
                 }
                 
@@ -34,11 +34,11 @@ class CustomNavbar extends HTMLElement {
                     font-weight: 700;
                     font-size: 1.5rem;
                     color: #40534C;
-}
+                    margin-bottom: 1rem;
+                }
                 
                 .logo img {
                     height: 100px;
-                    margin-right: 1rem;
                 }
                 
                 .nav-links {
@@ -123,8 +123,19 @@ transition: width 0.3s;
                     border-radius: 8px;
                     padding: 12px 10px;
                     cursor: pointer;
-                    transition: all 0.3s ease;
+                    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
                     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                    z-index: 1001; /* Ensure it stays above the collapsible menu */
+                    position: relative;
+                    margin-top: 1rem; /* Move the button below the logo */
+                }
+                
+                .mobile-menu-btn.active {
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: auto; /* Maintain height during animation */
                 }
                 
                 .mobile-menu-btn:hover {
@@ -148,6 +159,10 @@ transition: width 0.3s;
                     transition: all 0.3s ease;
                 }
                 
+                .nav-links.active {
+                    top: 120px; /* Adjust to appear below the logo */
+                }
+
                 .nav-links.active + .mobile-menu-btn .hamburger-line:nth-child(1) {
                     transform: translateY(8px) rotate(45deg);
                 }
@@ -162,7 +177,7 @@ transition: width 0.3s;
 @media (max-width: 768px) {
                     .nav-links {
                         position: fixed;
-                        top: 80px;
+                        top: 120px; /* Adjust to appear below the logo */
                         left: 0;
                         right: 0;
                         background: white;
@@ -220,8 +235,13 @@ transition: width 0.3s;
                         transform: rotate(180deg);
                     }
 .logo img {
-                        height: 60px;
+                        height: 100px;
                     }
+                }
+
+                /* Add padding to the body to prevent overlap */
+                body {
+                    padding-top: 120px; /* Adjust this value based on the navbar height */
                 }
 </style>
             <nav>
@@ -229,6 +249,13 @@ transition: width 0.3s;
                     <a href="/" class="logo">
 <img src="assets/_pictures/44636800604-removebg-preview.png" alt="Jagdschule Frühauf Logo">
                     </a>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </span>
+                </button>
                 <div class="nav-links">
                     <a href="/#about">Über Uns</a>
                     <a href="/#teachers">Unsere Dozenten</a>
@@ -241,14 +268,7 @@ transition: width 0.3s;
                         </div>
                     </div>
                     <a href="/#contact">Kontakt</a>
-</div>
-                    <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
-                        <span class="hamburger">
-                            <span class="hamburger-line"></span>
-                            <span class="hamburger-line"></span>
-                            <span class="hamburger-line"></span>
-                        </span>
-                    </button>
+                </div>
 </div>
             </nav>
         `;
@@ -258,10 +278,12 @@ transition: width 0.3s;
             const menuToggle = this.shadowRoot.getElementById('mobile-menu-toggle');
             const navLinks = this.shadowRoot.querySelector('.nav-links');
             const menuIcon = this.shadowRoot.getElementById('menu-icon');
+
             menuToggle.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
             });
-            
+
             // Handle dropdown toggle on mobile
             const dropdownToggles = this.shadowRoot.querySelectorAll('.dropdown-toggle');
             dropdownToggles.forEach(toggle => {
@@ -273,8 +295,26 @@ transition: width 0.3s;
                     }
                 });
             });
-}
-}
+
+            // Prevent closing the navbar when "Unsere Kurse" is selected
+            const dropdownLinks = this.shadowRoot.querySelectorAll('.dropdown-menu a');
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                });
+            });
+
+            // Close menu when a link is clicked
+            const navLinksItems = this.shadowRoot.querySelectorAll('.nav-links > a');
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    window.scrollBy({ top: -120, behavior: 'smooth' }); // Adjust scroll to keep navbar above section headings
+                });
+            });
+        }
+    }
 }
 
 customElements.define('custom-navbar', CustomNavbar);
