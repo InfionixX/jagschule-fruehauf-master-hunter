@@ -108,6 +108,10 @@ body {
     .firearm-card img {
         filter: grayscale(0%);
     }
+
+    #courseContainer{
+        align-items: center;
+    }
 }
 /* Firearms cards on mobile */
 .firearm-card {

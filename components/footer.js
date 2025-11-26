@@ -116,11 +116,11 @@ class CustomFooter extends HTMLElement {
                     </div>
                     <p>Die Jagdschule mit den meisten Erfahrungswerten!</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/jagdschule.fruehauf/" aria-label="Facebook">
+                        <a href="https://www.facebook.com/jagdschule.fruehauf/" target="_blank" aria-label="Facebook">
                             <i data-feather="facebook"></i>
                         </a>
-                        <a href="https://www.instagram.com/jagdschule_fruehauf/" aria-label="Instagram">
-                            <i data-feather="instagram"></i>
+                        <a href="https://www.instagram.com/jagdschule_fruehauf/" target="_blank" aria-label="Instagram">
+                            <svg width="100" height="100" xmlns="assets/_icons/instagram.svg" stroke="white">
                         </a>
                     </div>
                 </div>

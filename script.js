@@ -1,4 +1,3 @@
-
 // Add hunting grounds to navbar links
 document.querySelectorAll('custom-navbar').forEach(navbar => {
     const shadow = navbar.shadowRoot || navbar;
@@ -14,14 +13,23 @@ document.querySelectorAll('custom-navbar').forEach(navbar => {
 });
 
 // Smooth scrolling for anchor links
+// Updated to include smooth appearance of sections
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
             behavior: 'smooth'
         });
+
+        // Add a slight delay to ensure the animation class is applied after scrolling
+        setTimeout(() => {
+            target.classList.add('visible');
+        }, 300);
     });
 });
+
 // Animation observer
 function initScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
@@ -51,6 +59,7 @@ function initScrollAnimations() {
         observer.observe(el);
     });
 }
+
 // Initialize animations when page loads
 document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimations();

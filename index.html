@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jagdschule Frühauf | Startseite</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script>feather.replace();</script>
     <link rel="icon" type="image/x-icon" href="assets/_favicon/favicon-16x16.png">
 </head>
 <body class="bg-gray-50">
@@ -170,7 +171,7 @@
     <section id="courses" class="py-20 bg-gray-100 px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Unsere Kurse</h2>
-            <div class="flex flex-col md:flex-row justify-center gap-8">
+            <div id="courseContainer" class="flex flex-col md:flex-row justify-center gap-8">
                 <!-- Course 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden w-full md:w-1/2 max-w-md">
                     <div class="bg-[#40534C] text-white p-4 text-center">
@@ -345,7 +346,7 @@
                         </ul>
                     </div>
                     <div class="rounded-xl overflow-hidden">
-                        <img src="http://static.photos/nature/640x360/1" alt="Conservation" class="w-full h-auto">
+                        <img src="assets/_pictures/Foto 11.05.24, 18 53 16.jpg" alt="Conservation" class="w-full h-auto">
                     </div>
                 </div>
             </div>
@@ -477,11 +478,12 @@
     <teacher-popup></teacher-popup>
 
     <!-- Component Scripts -->
+    
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
     <script src="components/legal-popups.js"></script>
     <script src="components/teacher-popup.js"></script>
-<script src="script.js"></script>
-    <script>feather.replace();</script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
