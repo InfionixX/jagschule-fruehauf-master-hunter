@@ -34,7 +34,7 @@ class TeacherPopup extends HTMLElement {
           font-size: 1.5rem;
           cursor: pointer;
           z-index: 10;
-          color: #40534C;
+          color: #ff0000;
         }
         .teacher-profile {
           display: grid;
